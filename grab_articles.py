@@ -3,7 +3,7 @@
 """Download new lab publication information from PubMed.
 
 We use this script to periodically search for, and download information about,
-new papers by either Dr. Laird or Dr. Sutherland.
+new papers.
 This script uses BioPython's PubMed search tool to grab information from PubMed based on search
 criteria.
 Then, we build a publication-specific MarkDown file for each new paper.
@@ -13,7 +13,7 @@ automatically points to exists.
 If the image doesn't exist, search online for a good one, export to PNG, and reduce the size to
 ~150px by 300px.
 
-You might also want to check new papers for relevant info, like a link to a GitHub repository or
+You might also want to check new papers for relevant info, like a link to a GitHub/OSF repository or
 OpenNeuro collection, that might be found in the text.
 
 Unfortunately, this notebook cannot find new preprints, so the associated website files must be
@@ -27,12 +27,11 @@ Steps
 2.  If any new papers were grabbed, check the following:
     a.  The journal image exists.
     b.  The paper has either of the lab PIs as an author.
-        Ensure that it isn't by *another* AR Laird or MT Sutherland.
     c.  The paper is not a duplicate of a preprint or another version of the paper.
         If so, merge the two versions.
 3.  Save the changes to the notebook.
 4.  Push changes to the notebook and affected files to GitHub.
-5.  Open a pull request to NBCLab/NBCLab.github.io.
+5.  Open a pull request to C0C0AN/CoCoAN.github.io.
 """
 import re
 from glob import glob
@@ -43,20 +42,12 @@ from dateutil import parser
 
 # Only grab papers from after the lab PIs came to FIU.
 searches = [
-    '"Laird AR"[AUTH] AND ("2012/01/01"[PDAT] : "3000/12/31"[PDAT])',
-    '"Sutherland MT"[AUTH] AND ("2012/01/01"[PDAT] : "3000/12/31"[PDAT])',
+    '"Herholz P"[AUTH]',
 ]
 
-# Papers indexed on PubMed, but not captured by the searches.
-other_pmids = [
-    "33749724",
-    "33932337",
-]
-pmid_search = "[PMID] OR ".join(other_pmids) + "[PMID]"
-searches.append(pmid_search)
 
 # Extract all publications matching term.
-Entrez.email = "tsalo006@fiu.edu"
+Entrez.email = "peer.herholz@northwestern.edu"
 
 rows = []
 
