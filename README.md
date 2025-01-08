@@ -2,11 +2,11 @@
 
 # TODOS
 
-See Issues on [the site](https://github.com/NBCLab/nbclab.github.io).
+See Issues on [the site](https://github.com/C0C0AN/CoCoAN.github.io).
 
 # How to add content
 
-Because the website code is hosted on GitHub, any lab member can contribute to the site. The general pattern will be: (1) Fork the repository to your own account; (2) Clone your fork to your laptop; (3) Make changes (e.g., add a new post to News or update your bio) to your local copy; (4) Test those changes by running a local version of the website; (5) If your changes don't break the website, commit your changes to your fork's remote; (6) Open a pull request from your fork to the main repository. Once the PR is open, the website administrator will review the changes and merge them into the main website.
+Because the website code is hosted on GitHub, any team member can contribute to the site. The general pattern will be: (1) Fork the repository to your own account; (2) Clone your fork to your laptop; (3) Make changes (e.g., add a new post to News or update your bio) to your local copy; (4) Test those changes by running a local version of the website; (5) If your changes don't break the website, commit your changes to your fork's remote; (6) Open a pull request from your fork to the main repository. Once the PR is open, the website administrator will review the changes and merge them into the main website.
 
 In order to contribute, you must have a GitHub account and you must set up Jekyll on your laptop (in order to demo your changes).
 
@@ -86,8 +86,8 @@ For example, an individual poster corresponds to one of the markdown files in `p
 That poster has its own page, and there is a link to that page on the main "Posters" page (which is generated from `posters/index.html`).
 
 The markdown files have two sections, a header with metadata and the content below.
-How the post is formatted on the general page (e.g., how Taylor Salo's picture fits into the [Team webpage](https://nbclab.github.io/team/)) is determined by the `index.html` file mentioned above.
-How the post is formatted on its own page (e.g., [Taylor Salo's member page](https://nbclab.github.io/team/taylor-salo)) is determined by the theme file for that post's category.
+How the post is formatted on the general page (e.g., how Peer Herholz' picture fits into the [Team webpage](https://CoCoAN.github.io/team/)) is determined by the `index.html` file mentioned above.
+How the post is formatted on its own page (e.g., [Peer Herholz' member page](https://CoCoAN.github.io/team/peer-herholz)) is determined by the theme file for that post's category.
 
 ## Themes
 
@@ -141,7 +141,7 @@ In order to reduce the amount of data we use with images, we have rules for imag
 
 The [code for this site][0] was forked from Dr. Allan Drummond's lab website, which in turn took a great deal of inspiration from Dr. Travis Bedford's [lab website][1]. We have modified a lot of the code and added some fun features, but the core codebase is still largely taken from the Drummond lab's original repository. The code was openly shared on [GitHub][2] under the MIT license, so please feel free to adapt it for your own purposes. However, if you do use any of the code, please remember to cite the code to Dr. Drummond and to link back to his [site][3].
 
-[0]: https://github.com/NBCLab/NBCLab.github.io
+[0]: https://github.com/C0C0AN/CoCoAN.github.io
 [1]: http://bedford.io
 [2]: https://github.com/drummondlab/drummondlab.github.io
 [3]: http://drummondlab.org/about.html

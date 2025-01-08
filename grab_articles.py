@@ -40,14 +40,13 @@ import pandas as pd
 from Bio import Entrez, Medline
 from dateutil import parser
 
-# Only grab papers from after the lab PIs came to FIU.
 searches = [
     '"Herholz P"[AUTH]',
 ]
 
 
 # Extract all publications matching term.
-Entrez.email = "peer.herholz@northwestern.edu"
+Entrez.email = "herholz.peer@gmail.com"
 
 rows = []
 

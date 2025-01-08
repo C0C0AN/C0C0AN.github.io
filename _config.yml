@@ -15,13 +15,13 @@ future: true
 # so be sure to set them if your theme uses them.
 #
 title : CoCoAN team
-tagline: Cognitive and computational (Auditory) Neuroscience
+tagline: Cognition and Computation in AI and Neuroscience
 institution:
-  url: http://fiu.edu
-  name: Florida International University
+  url: http://northwestern.edu
+  name: Northwestern University
 department:
-  url: http://cn.fiu.edu
-  name: Cognitive Neuroscience
+  url: https://communication.northwestern.edu/academics/communication-sciences-and-disorders/
+  name: Communication Sciences and Disorders
 author :
   name : Peer Herholz
   email : peer.herholz@northwestern.edu
