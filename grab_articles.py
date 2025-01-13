@@ -31,7 +31,7 @@ Steps
         If so, merge the two versions.
 3.  Save the changes to the notebook.
 4.  Push changes to the notebook and affected files to GitHub.
-5.  Open a pull request to C0C0AN/CoCoAN.github.io.
+5.  Open a pull request to C0C0AN/C0C0AN.github.io.
 """
 import re
 from glob import glob
