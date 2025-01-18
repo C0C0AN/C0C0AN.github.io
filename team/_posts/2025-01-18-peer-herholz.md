@@ -2,7 +2,7 @@
 layout: member
 title: Peer Herholz
 position: Research Assistant Professor
-department: Communication Sciences and Disorders
+department: Communication Sciences and Disorders, Cognitive Science, Neuroscience
 handle: peerherholz
 nickname: Peer
 science_names: [Herholz P]
