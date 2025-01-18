@@ -7,7 +7,7 @@ handle: peerherholz
 nickname: Peer
 science_names: [Herholz P]
 image: /assets/images/team/peer-herholz.png
-alumni:
+alumni: false
 
 # social
 cv: https://drive.google.com/file/d/1RGILUhaQelJRhEi7vXrJ0GHv8yqnbucc/view
